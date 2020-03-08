@@ -28,13 +28,14 @@ namespace Bakery
         TypeLine("How many loafs of bread would you like?");
         string loafQuont = Console.ReadLine();
         int loafNum = int.Parse(loafQuont);
-        TypeLine($"Bread order summary: Total number of bread(s): {loafNum} Price: $");
+        bread.BreadPrice(loafNum);
+        TypeLine($"Bread order summary: Total number of bread(s): {loafNum} Price: $ {bread.LoafPrice}");
       }else if(userOrder == "pastry")
       {
         TypeLine("How many of the pasties would you like?");
         string pastryQuont = Console.ReadLine();
         int pastryNum = int.Parse(pastryQuont);
-        TypeLine($"Pastry order summary: Total number of pastr(y/ies): {pastryNum} Price: $");
+        TypeLine($"Pastry order summary: Total number of pastr(y/ies): {pastryNum} Price: $ ");
       }
       else
       {
