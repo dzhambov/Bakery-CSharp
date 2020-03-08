@@ -1,20 +1,28 @@
 using System;
+using System.Collections.Generic;
 
 namespace Bakery.Models 
 {
 
   public class Bread
   {
-    public string LoafKind { get; set; }
     public int LoafNum { get; set; }
     public int LoafPrice { get; set; }
     
-  public BreadOrder ( string LoafKind, int LoafNum, int LoafPrice )
-    {
-      LoafKind = loafKind;
-      LoafNum = loafNum;
-      LoafPrice = loafPrice;
-    }
+    public void BreadOrder(int loafNum, int loafPrice)
+      {
+        LoafNum = loafNum;
+        LoafPrice = loafPrice;
+      }
+    // public void AddBread(int loafNum)
+    // {
+    //   return loafNum * 5;
+    // }
+
+    // public void BreadPrice(int loafNum)
+    // { 
+
+    // }
     
   }
 }
