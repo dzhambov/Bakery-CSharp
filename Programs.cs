@@ -35,7 +35,8 @@ namespace Bakery
         TypeLine("How many of the pasties would you like?");
         string pastryQuont = Console.ReadLine();
         int pastryNum = int.Parse(pastryQuont);
-        TypeLine($"Pastry order summary: Total number of pastr(y/ies): {pastryNum} Price: $ ");
+        pastry.PastryTotal(pastryNum);
+        TypeLine($"Pastry order summary: Total number of pastr(y/ies): {pastryNum} Price: $ {pastry.PastryPrice}");
       }
       else
       {

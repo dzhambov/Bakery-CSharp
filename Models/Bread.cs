@@ -12,21 +12,19 @@ namespace Bakery.Models
     public void BreadOrder(int loafNum)
       {
         LoafNum = loafNum;
-        LoafPrice = loafNum * 5;
       }
 
     public void BreadPrice(int loafNum)
     { 
       if(loafNum % 3 == 0)
       {
-        LoafPrice = (loafNum * 5)/3;
+        LoafPrice = (loafNum * 5)-5;
       }
       else
       {
         LoafPrice = loafNum * 5;
       }
-    }
-    
+    } 
   }
 }
 
