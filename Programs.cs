@@ -10,7 +10,7 @@ namespace Bakery
     {
       Bread bread = new Bread();
       Pastry pastry = new Pastry();
-      Console.ForegroundColor = ConsoleColor.Magenta;
+      Console.ForegroundColor = ConsoleColor.Red;
       TypeLine("Please Enter Your Name to Start Your Order");
       string userName = Console.ReadLine().ToUpper();
       TypeLine("Hello " + userName + "," + " welcome to 'La Boulangerie' bakery!");
