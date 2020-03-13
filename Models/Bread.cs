@@ -18,7 +18,7 @@ namespace Bakery.Models
     { 
       if(loafNum % 3 == 0)
       {
-        LoafPrice = (loafNum * 5)-5;
+        LoafPrice = (loafNum - (loafNum/3))*5;
       }
       else
       {
