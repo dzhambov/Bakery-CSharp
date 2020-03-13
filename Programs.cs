@@ -8,6 +8,7 @@ namespace Bakery
  {
     public static void Main()
     {
+      Console.Clear();
       Bread bread = new Bread();
       Pastry pastry = new Pastry();
       Console.ForegroundColor = ConsoleColor.Red;
@@ -42,6 +43,8 @@ namespace Bakery
       {
         TypeLine("Please select an item that is on the menu!");
       }
+      System.Threading.Thread.Sleep(3000);
+      Main();
     }
 
     public static void TypeLine(string input)
