@@ -18,7 +18,7 @@ namespace Bakery.Models
     { 
       if(pastryNum % 3 == 0)
       {
-        PastryPrice = (pastryNum * 2)-1;
+        PastryPrice = (pastryNum / 3) * 5 + (pastryNum % 3) * 2;
       }
       else
       {
